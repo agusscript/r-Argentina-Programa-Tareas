@@ -17,20 +17,37 @@ function imprimirHastaDiez() {
     console.log(i);
   }
 }
-imprimirHastaDiez()
 
 /*
  Desafìo de programación  #2: Imprimí los números impares del 1 al 100
 
  1 3 5 ... 99
+*/
 
+function imprimirImpares() {
+  for (let i = 1; i < 100; i += 2) {
+    console.log(i);
+  }
+}
+
+/*
 Desafío de programación #3: Imprimí la tabla de multiplicación del 7
 
  7x0 = 0
  7x1 = 7
  ...
  7x9 = 63
+*/
 
+function imprimirTablaSiete() {
+  for (let i = 0; i <= 10; i++) {
+    let resultado = i * 7;
+    let tabla = "7 * " + i + " = " + resultado;
+    console.log(tabla);
+  }
+}
+
+/*
 Desafío de programación #4: Imprimí todas las tablas de multiplicación del 1 al 9
 
  1x0 = 0
@@ -42,16 +59,53 @@ Desafío de programación #4: Imprimí todas las tablas de multiplicación del 1
  ...
  ...
  9x9 = 81
+*/
 
+function imprimirTablas() {
+  for (let n = 1; n <= 10; n++) {
+    iterarNumeros(n);
+    console.log("");
+  }
+
+  function iterarNumeros(n) {
+    for (let i = 1; i <= 10; i++) {
+      let resultado = i * n;
+      let tabla = n + " * " + i + " = " + resultado;
+      console.log(tabla);
+    }
+  }
+}
+
+/*
 Desafío de programación #5: Calcula el resultado de la suma de los numeros del 1 al 10 en un array.
  [1,2,3,4,5,6,7,8,9,10]
 
  1 + 2 + 3 + ... + 10 = ? //hacerlo con un array y un bucle
+*/
 
+function calcularSumaEnArray() {
+  let miArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  let resultado = 0;
+
+  for (let i = 0; i < miArray.length; i++) {
+    resultado += miArray[i];
+    console.log(resultado);
+  }
+}
+
+/*
 Desafío de programación #6: Calcula 10! (10 factorial)
 
  10 * 9 * 8 * ... * 1
+*/
 
+total = 1;
+for (let i = 1; i <= 10; i++) {
+  total *= i;
+  console.log(total);
+}
+
+/*
 Desafío de programación #7: Calcula la suma de todos los números impares mayores que 10 y menores que 30
 
 Desafío de programación #8: Crea una función que convierta de Celsius a Fahrenheit
