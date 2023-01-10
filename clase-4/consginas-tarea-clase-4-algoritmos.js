@@ -99,21 +99,37 @@ Desafío de programación #6: Calcula 10! (10 factorial)
  10 * 9 * 8 * ... * 1
 */
 
-total = 1;
-for (let i = 1; i <= 10; i++) {
-  total *= i;
-  console.log(total);
+function calcularFactorial() {
+  total = 1;
+  for (let i = 1; i <= 10; i++) {
+    total *= i;
+    console.log(total);
+  }
 }
 
 /*
 Desafío de programación #7: Calcula la suma de todos los números impares mayores que 10 y menores que 30
+*/
 
+/*
 Desafío de programación #8: Crea una función que convierta de Celsius a Fahrenheit
 
 Desafío de programación #9: Crea una función que convierta de Fahrenheit a Celsius
 
 Desafío de programación #10: Calcula la suma de todos los números en un array de números
+*/
 
+function sumarNumerosEnArray() {
+  let miArray = [10, 10, 10, 10, 10];
+  sumaArray = 0;
+
+  for (let i = 0; i < miArray.length; i++) {
+    sumaArray += miArray[i];
+    console.log(sumaArray);
+  }
+}
+
+/*
 Desafío de programación #11: Calcula el promedio de todos los números en un array de números. (en una función)
 
 Desafío de programación #12: Crea una función que reciba un array de números y devuelva un array conteniendo solo los números positivos
