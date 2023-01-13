@@ -1,7 +1,7 @@
 const $horasPorClase = document.querySelector("#horas");
 const $minutosPorClase = document.querySelector("#minutos");
 const $segundosPorClase = document.querySelector("#segundos");
-const $botonAñadirClase = document.querySelector("#añadir-clase");
+const $botonAgregarClase = document.querySelector("#agregar-clase");
 const $tiempoClasesTexto = document.querySelector("#tiempo-clase");
 const $sumatiempoTotalTexto = document.querySelector("#tiempo-total-texto");
 const $botonCalcularTiempo = document.querySelector("#calcular-tiempo");
@@ -52,7 +52,7 @@ function calcularTiempoTotal() {
   $sumatiempoTotalTexto.textContent = "El tiempo total de las clases es " + result;
 }
 
-$botonAñadirClase.onclick = function () {
+$botonAgregarClase.onclick = function () {
   agregarTiempoClase();
 
   return false;
