@@ -10,7 +10,7 @@ let horasTotales = 0;
 let minutosTotales = 0;
 let segundosTotales = 0;
 
-function añadirTiempoClase() {
+function agregarTiempoClase() {
   let horasDeLaClase;
   let minutosDeLaClase;
   let segundosDeLaClase;
@@ -53,11 +53,9 @@ function calcularTiempoTotal() {
 }
 
 $botonAñadirClase.onclick = function () {
-  añadirTiempoClase();
+  agregarTiempoClase();
 
   return false;
 };
 
-$botonCalcularTiempo.onclick = function() {
-  calcularTiempoTotal();
-}
+$botonCalcularTiempo.onclick = calcularTiempoTotal;
