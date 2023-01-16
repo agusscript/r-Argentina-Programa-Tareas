@@ -16,13 +16,13 @@ for (let i = 0; i < arrayNumeros.length; i++) {
   sumaNumerosArray += arrayNumeros[i];
 }
 
-$promedioNumTexto.textContent = "El promedio es " + sumaNumerosArray / arrayNumeros.length;
+$promedioNumTexto.textContent = sumaNumerosArray / arrayNumeros.length;
 
 let minNum = Math.min(...arrayNumeros);
 let maxNum = Math.max(...arrayNumeros);
 
-$minNumTexto.textContent = "El número más pequeño es " + minNum;
-$maxNumTexto.textContent = "El número más grande es " + maxNum;
+$minNumTexto.textContent = minNum;
+$maxNumTexto.textContent = maxNum;
 
 let numeroMasRepetido; 
 
@@ -34,6 +34,6 @@ for(let i = 0; i < arrayNumeros.length; i++) {
   }
 }
 
-$frecNumTexto.textContent = "El número más frecuente es " + numeroMasRepetido;
+$frecNumTexto.textContent = numeroMasRepetido;
 
 
