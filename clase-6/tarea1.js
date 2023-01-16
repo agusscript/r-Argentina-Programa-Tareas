@@ -13,6 +13,7 @@ const $botonCalcular = document.querySelector("#calcular");
 const $maxEdadTexto = document.querySelector("#max-edad");
 const $minEdadTexto = document.querySelector("#min-edad");
 const $promEdadTexto = document.querySelector("#prom-edad");
+const $botonReiniciar = document.querySelector("#reiniciar");
 
 let numIntegrantesFamilia;
 
@@ -68,3 +69,8 @@ $botonCalcular.onclick = function() {
 
   return false
 }
+
+$botonReiniciar.onclick = function() {
+  location.reload;
+}
+
