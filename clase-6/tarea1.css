@@ -1,0 +1,8 @@
+#integrantes-container input {
+  display: block;
+}
+
+em {
+  display: block;
+  margin-top: 4px;
+}
