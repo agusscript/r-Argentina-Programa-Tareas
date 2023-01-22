@@ -131,7 +131,23 @@ function sumarNumerosEnArray() {
 
 /*
 Desafío de programación #11: Calcula el promedio de todos los números en un array de números. (en una función)
+*/
 
+function calcularPromedio(miArray) {
+  miArray = [10, 10, 10];
+  let suma = 0;
+  let promedio;
+
+  for(let i = 0; i < miArray.length; i++) {
+    suma += miArray[i];
+  
+  }
+
+  promedio = suma / miArray.length;
+  console.log(promedio)
+}
+
+/*
 Desafío de programación #12: Crea una función que reciba un array de números y devuelva un array conteniendo solo los números positivos
 
 Desafío de programación #13: Find the maximum number in an array of numbers
