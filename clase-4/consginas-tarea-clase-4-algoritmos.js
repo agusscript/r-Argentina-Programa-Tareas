@@ -111,6 +111,15 @@ function calcularFactorial() {
 Desafío de programación #7: Calcula la suma de todos los números impares mayores que 10 y menores que 30
 */
 
+function calcularNumerosImpares() {
+  let total = 0;
+
+  for(let i = 11; i < 30; i += 2) {
+    total += i;
+    console.log(total); 
+  }
+}
+
 /*
 Desafío de programación #8: Crea una función que convierta de Celsius a Fahrenheit
 
