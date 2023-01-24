@@ -114,9 +114,9 @@ Desafío de programación #7: Calcula la suma de todos los números impares mayo
 function calcularNumerosImpares() {
   let total = 0;
 
-  for(let i = 11; i < 30; i += 2) {
+  for (let i = 11; i < 30; i += 2) {
     total += i;
-    console.log(total); 
+    console.log(total);
   }
 }
 
@@ -147,20 +147,33 @@ function calcularPromedio(miArray) {
   let suma = 0;
   let promedio;
 
-  for(let i = 0; i < miArray.length; i++) {
+  for (let i = 0; i < miArray.length; i++) {
     suma += miArray[i];
-  
   }
 
   promedio = suma / miArray.length;
-  console.log(promedio)
+  console.log(promedio);
 }
 
 /*
 Desafío de programación #12: Crea una función que reciba un array de números y devuelva un array conteniendo solo los números positivos
 
 Desafío de programación #13: Find the maximum number in an array of numbers
+*/
 
+function encontrarNumeroMaximoEnArray() {
+  miArray = [1, 23, 54, 87, 12, 34, 77, 14, 91];
+  let numeroMaximo = miArray[0];
+
+  for (let i = 0; i < miArray.length; i++) {
+    if (miArray[i] > numeroMaximo) {
+      numeroMaximo = miArray[i];
+    }
+  }
+  console.log(numeroMaximo);
+}
+
+/*
 Desafío de programación #14: Imprimir los primeros 10 dígitos de Fibonacci sin recursión
 
 Fibonacci (lo buscan en google si no lo saben o no se acuerdan)
