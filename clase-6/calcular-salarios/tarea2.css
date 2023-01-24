@@ -1,3 +1,7 @@
+body {
+    background-color: gray;
+}
+
 .nuevo-integrante-input {
     display: block;
 }
@@ -6,3 +10,4 @@
     display: block;
     margin-top: 4px;
 }
+

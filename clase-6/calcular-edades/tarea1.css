@@ -1,3 +1,7 @@
+body {
+  background-color: gray;
+}
+
 #integrantes-container input {
   display: block;
 }
@@ -6,3 +10,4 @@ em {
   display: block;
   margin-top: 4px;
 }
+

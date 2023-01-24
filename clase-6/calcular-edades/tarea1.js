@@ -7,26 +7,24 @@ const $integrantesFamiliaInput = document.querySelector("#integrantes-familia");
 const $botonAgregarIntegrantes = document.querySelector("#agregar");
 const $containerIntegrantes = document.querySelector("#integrantes-container");
 const $botonCalcular = document.querySelector("#calcular");
-const $maxEdadTexto = document.querySelector("#max-edad");
-const $minEdadTexto = document.querySelector("#min-edad");
-const $promEdadTexto = document.querySelector("#prom-edad");
+const $maximaEdadTexto = document.querySelector("#maxima-edad");
+const $minimaEdadTexto = document.querySelector("#minima-edad");
+const $promedioEdadTexto = document.querySelector("#promedio-edad");
 const $botonReiniciar = document.querySelector("#reiniciar");
 
-let numIntegrantesFamilia;
-
 $botonAgregarIntegrantes.onclick = function () {
-  numIntegrantesFamilia = $integrantesFamiliaInput.value;
   crearInputs();
 
   return false;
 };
 
 function crearInputs() {
-  let nuevoInput;
-  let nuevoLabel;
-  let numIntegrante;
+  const cantidadIntegrantes = $integrantesFamiliaInput.value;
 
-  for (let i = 1; i <= numIntegrantesFamilia; i++) {
+  for (let i = 1; i <= cantidadIntegrantes; i++) {
+    let nuevoInput;
+    let nuevoLabel;
+    let numIntegrante;
     numIntegrante = i;
 
     nuevoLabel = document.createElement("label");
@@ -45,21 +43,29 @@ $botonCalcular.onclick = function () {
 
   for (let i = 0; i < edadesInput.length; i++) {
     edadesArray.push(Number(edadesInput[i].value));
-    console.log();
   }
 
-  let maxEdad = Math.max(...edadesArray);
-  $maxEdadTexto.textContent = maxEdad;
+  let mayorEdad = edadesArray[0];
+  for (let i = 0; i < edadesArray.length; i++) {
+    if (edadesArray[i] > mayorEdad) {
+      mayorEdad = edadesArray[i];
+    }
+  }
+  $maximaEdadTexto.textContent = mayorEdad;
 
-  let minEdad = Math.min(...edadesArray);
-  $minEdadTexto.textContent = minEdad;
+  let menorEdad = edadesArray[0];
+  for (let i = 0; i < edadesArray.length; i++) {
+    if (edadesArray[i] < menorEdad) {
+      menorEdad = edadesArray[i];
+    }
+  }
+  $minimaEdadTexto.textContent = menorEdad;
 
   for (let i = 0; i < edadesArray.length; i++) {
     sumaEdades += edadesArray[i];
   }
-
   let promedioEdades = sumaEdades / edadesArray.length;
-  $promEdadTexto.textContent = promedioEdades;
+  $promedioEdadTexto.textContent = promedioEdades;
 
   return false;
 };
