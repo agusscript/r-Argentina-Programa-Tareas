@@ -15,11 +15,9 @@ function crearInputs() {
   for (let i = 1; i <= cantidadIntegrantes; i++) {
     let nuevoInput;
     let nuevoLabel;
-    let numIntegrante;
-    numIntegrante = i;
 
     nuevoLabel = document.createElement("label");
-    nuevoLabel.textContent = `Edad integrante #${numIntegrante}:`;
+    nuevoLabel.textContent = `Edad integrante #${i}:`;
     nuevoInput = document.createElement("input");
     nuevoInput.type = "number";
     $containerIntegrantes.appendChild(nuevoLabel);
