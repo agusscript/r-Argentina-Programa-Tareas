@@ -122,7 +122,14 @@ function calcularNumerosImpares() {
 
 /*
 Desafío de programación #8: Crea una función que convierta de Celsius a Fahrenheit
+*/
 
+function convertirCelsiusAFarenheit(celsius) {
+  let fahrenheit = celsius * (9/5) + 32;
+  return fahrenheit
+}
+
+/*
 Desafío de programación #9: Crea una función que convierta de Fahrenheit a Celsius
 
 Desafío de programación #10: Calcula la suma de todos los números en un array de números
